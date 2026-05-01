@@ -1,0 +1,9 @@
+/* Constrain images so they don't force the page layout wider than the
+ * content area. Without this, large images push the entire page (text,
+ * margins, sidebar) to scale up. */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5em auto;
+}
