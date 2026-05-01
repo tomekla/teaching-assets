@@ -4,28 +4,29 @@ Public CSS and asset files referenced by my course content in Codio and other le
 
 ## What's here
 
-This repository hosts files that need to be web-accessible to other systems (primarily Codio) but aren't large enough to justify a CDN or hosting service. GitHub serves the raw files directly, which is sufficient for the modest traffic of course rendering.
+This repository hosts files that need to be web-accessible to other systems but aren't large enough to justify a CDN or hosting service. Files are organized by type:
 
-## Files
+- `css/` — stylesheets
+- `images/` — illustrations and graphics referenced from course content
+- `data/` — sample data files (CSVs, JSON) for student exercises
+- `fonts/` — typefaces
 
-### `codio-book.css`
+Not every directory will exist at all times. New ones are created as needed.
 
-Custom CSS applied at the course level in Codio. Constrains image sizing so that large illustrations don't force the page layout wider than the content area.
+## How to reference a file
 
-To use this in a Codio course, copy the raw URL of this file:
+Files are served via GitHub Pages. To use any file from this repository, construct the URL as:
 
 ```
-https://raw.githubusercontent.com/<username>/teaching-assets/main/codio-book.css
+https://<username>.github.io/teaching-assets/<directory>/<filename>
 ```
 
-Then in Codio: **Courses → [your course] → Course Details → Extra Guides CSS URL**, paste the URL, save.
-
-The CSS will be loaded in addition to Codio's default styles for every page in every assignment in that course.
+For Codio specifically, paste the URL into **Course Details → Extra Guides CSS URL** for stylesheets, or reference the URL directly from markdown content for images.
 
 ## Notes
 
-Files in this repository are public by virtue of being referenced via raw GitHub URLs. Do not commit anything to this repository that should not be publicly accessible.
+Files in this repository are public by virtue of being referenced via web URLs. Do not commit anything to this repository that should not be publicly accessible.
 
 ## License
 
-Content in this repository is released under the MIT License unless otherwise specified.
+MIT. See `LICENSE`.
