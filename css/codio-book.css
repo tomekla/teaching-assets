@@ -2,7 +2,7 @@
  * content area. Without this, large images push the entire page (text,
  * margins, sidebar) to scale up. */
 img {
-  max-width: 600px;
+  max-width: min(100%, 600px, 50vw);
   height: auto;
   display: block;
   margin: 1.5em auto;
